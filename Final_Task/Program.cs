@@ -17,3 +17,12 @@ void PrintArray(string[] array)
     for (int i = 0; i < array.Length - 1; i++) Console.Write($"{array[i]}, ");
     Console.Write($"{array[array.Length - 1]}]");
 }
+int ArrayCheck(string[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) count++;
+    }
+    return count;
+}
